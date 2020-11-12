@@ -57,7 +57,7 @@ def __get_timestamps_from_file(in_path: str) -> Optional[List[float]]:
 
 def __create_scene(in_path: str, out_path: str, start_ts: str, duration: str, debug: bool=False) -> bool:
     sh.sh(
-        'ffmpeg -y -ss {} -t {} -i {}  {} -async 1'.format(start_ts, duration, in_path, out_path), 
+        'ffmpeg -y -ss {} -t {} -i {} {} -async 1'.format(start_ts, duration, in_path, out_path), 
         debug=debug
     )
 
