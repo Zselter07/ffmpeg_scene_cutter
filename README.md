@@ -6,6 +6,16 @@
 `pip install scene_cutter` or 
 `pip3 install scene_cutter`
 
+## Requirements
+
+`pip install ffmpeg`
+`pip install kcu`
+
+or
+
+`pip3 install ffmpeg`
+`pip3 install kcu`
+
 ## Usecase
 
 ```
@@ -21,7 +31,6 @@ scene_paths = create_scenes(input_path, output_folder_path)
  `max_scene_duration` - default is 30 sec
  
  `debug` - default is False
-
 
 ## Note
 
