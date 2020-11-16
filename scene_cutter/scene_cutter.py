@@ -11,7 +11,6 @@ def create_scenes(
     max_scene_duration: float=30,
     debug: bool=False
 ) -> Optional[List[str]]:
-    sh.rmrf(output_folder_path)
     os.makedirs(output_folder_path, exist_ok=True)
     timestamps_path = os.path.join(output_folder_path, 'timestamps')
     scene_paths = []
